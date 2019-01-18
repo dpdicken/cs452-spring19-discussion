@@ -16,4 +16,4 @@ sys_calls: sys_calls.c
 	gcc -w -o sys_calls sys_calls.c
 
 clean:
-	rm typedef macro bit_ops pointers
+	rm typedef macro bit_ops pointers sys_calls
