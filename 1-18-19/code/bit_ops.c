@@ -1,4 +1,5 @@
 #define GET_BIT(bit, val) ((val >> bit) & 1)
+#define FLIP_BIT(bit, val) ((1 << bit) ^ val)
 
 void print_bytes_bits(unsigned char byte) {
 	int i = 7;
@@ -19,4 +20,10 @@ int main() {
 	print_bytes_bits(byte1 | byte2);
 	print_bytes_bits(byte1 ^ byte2);
 
+	byte1 = 15; // 00001111
+	int i = 0;
+	for (; i < 8; i++) {
+		byte1 = FLIP_BIT(i, byte1);
+	} 
+	print_bytes_bits(byte1);
 }
