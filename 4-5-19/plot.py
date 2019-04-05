@@ -1,4 +1,9 @@
 from matplotlib import pyplot as plt # may have to pip install this
+# To install:
+# 	python -m pip install -U pip
+# 	python -m pip install -U matplotlib
+#
+# If you're using python 3, replace "python" with "python3"
 
 data = {
 	"FIFO" :{
